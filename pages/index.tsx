@@ -1,17 +1,19 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import NextLink from "next/link";
-import { Paper, Box, Typography, Link, Grid } from "@mui/material";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { Paper, Box, Typography, Link, Grid } from '@mui/material';
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title></title>
+        <title>Fanvue</title>
+        <link rel='icon' href='/public/favicon.ico' />
+        <meta name='viewport' content='initial-scale=1, width=device-width' />
       </Head>
       <main>
-        <Box textAlign={"center"} my={8}>
-          <Typography component="h1" variant="h3">
+        <Box textAlign={'center'} my={8}>
+          <Typography component='h1' variant='h3'>
             Fanvue&apos;s Frontend coding challenge
           </Typography>
         </Box>
@@ -20,16 +22,16 @@ const Home: NextPage = () => {
             item
             xs={6}
             sx={{
-              display: "flex",
-              justifyContent: "center",
+              display: 'flex',
+              justifyContent: 'center',
             }}
           >
-            <NextLink href="/feed" passHref>
+            <NextLink href='/feed' passHref>
               <Link>
                 <Paper
                   sx={{
-                    textAlign: "center",
-                    border: "1px solid grey",
+                    textAlign: 'center',
+                    border: '1px solid grey',
                     borderRadius: 5,
                     p: 3,
                   }}
@@ -45,16 +47,16 @@ const Home: NextPage = () => {
             item
             xs={6}
             sx={{
-              display: "flex",
-              justifyContent: "center",
+              display: 'flex',
+              justifyContent: 'center',
             }}
           >
-            <NextLink href="/vault" passHref>
+            <NextLink href='/vault' passHref>
               <Link>
                 <Paper
                   sx={{
-                    textAlign: "center",
-                    border: "1px solid grey",
+                    textAlign: 'center',
+                    border: '1px solid grey',
                     borderRadius: 5,
                     p: 3,
                   }}
