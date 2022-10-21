@@ -16,7 +16,7 @@ const Post = ({ post }: IPostProps) => {
     const res = await fetch(
       `https://jsonplaceholder.typicode.com/comments?postId=${postId}`,
     );
-    const data = await res.json();
+    const data: [IComment] | [] = await res.json();
     return setComments(data);
   };
 
